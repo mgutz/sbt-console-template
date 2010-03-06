@@ -8,3 +8,4 @@ project/plugins/target/
 target/
 *.swp
 *~
+! .gitkeep
