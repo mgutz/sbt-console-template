@@ -1,7 +1,7 @@
 import org.scalatest.Spec
 import org.scalatest.matchers.MustMatchers
 
-import example.Bank
+import com.example.Bank
 
 class BankSpec extends Spec with MustMatchers {
   describe("simple bank") {
@@ -13,7 +13,7 @@ class BankSpec extends Spec with MustMatchers {
 
     it("should allow deposits") {
       bank.deposit(100.0)
-      bank.balance must be (100.0) 
+      bank.balance must be (100.0)
     }
 
     it("should allow withdrawals") {
@@ -26,4 +26,3 @@ class BankSpec extends Spec with MustMatchers {
     }
   }
 }
-
